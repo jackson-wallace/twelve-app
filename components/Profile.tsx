@@ -23,72 +23,44 @@ const Profile = ({
 }: ProfileProps) => {
   return (
     <div>
-      <h4 className="scroll-m-20 text-xl font-semibold tracking-tight flex justify-center my-3">
-        {username}
+      <h4 className="scroll-m-20 text-xl font-semibold tracking-tight flex justify-end my-3 px-6">
+        July 7
       </h4>
-      <div className="flex justify-around items-center my-3">
-        <div className="flex justify-center basis-1/3">
-          <Avatar className="h-20 w-20">
+      <div className="flex justify-around items-center my-5">
+        <div className="flex justify-center">
+          <Avatar className="h-1/4 w-1/4">
             <AvatarImage src={profilePicture} />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex justify-evenly basis-2/3">
-          <div className="flex flex-col items-center">
-            <small className="text-sm font-medium leading-none">0</small>
-            <p className="text-sm text-muted-foreground">Year</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <small className="text-sm font-medium leading-none">1,000</small>
-            <p className="text-sm text-muted-foreground">Followers</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <small className="text-sm font-medium leading-none">1,000</small>
-            <p className="text-sm text-muted-foreground">Following</p>
-          </div>
-        </div>
       </div>
-      <div className="flex-col m-3 pl-3">
-        <div className="text-lg font-semibold">{name}</div>
-        <p className="text-sm text-muted-foreground">{bio}</p>
-      </div>
-      <div className="px-6 pb-3">
-        <Button className="flex w-full" size="sm">
-          Edit Profile
-        </Button>
+      <div className="flex justify-between px-6 my-2">
+        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+          {name}
+        </h3>
+        <p className="text-xl text-muted-foreground">2023</p>
       </div>
       <div className="flex flex-wrap space-evenly px-4">
-        {/* MAP TO LIST */}
-        <div className="flex w-1/2">
+        {/*  
+          - REPLACE BELOW WITH FEED COMPONENT
+        */}
+        <div className="flex w-full">
           <AspectRatio ratio={1 / 1}>
             <Image
               src="/morty.png"
               alt="Image"
               className="object-cover p-2"
               fill
-              style={{ borderRadius: "6%" }}
             />
           </AspectRatio>
         </div>
-        <div className="flex w-1/2">
+        <div className="flex w-full">
           <AspectRatio ratio={1 / 1}>
             <Image
               src="/morty.png"
               alt="Post Thumbnail"
               className="object-cover p-2"
               fill
-              style={{ borderRadius: "6%" }}
-            />
-          </AspectRatio>
-        </div>
-        <div className="flex w-1/2">
-          <AspectRatio ratio={1 / 1}>
-            <Image
-              src="/morty.png"
-              alt="Post Thumbnail"
-              className="object-cover p-2"
-              fill
-              style={{ borderRadius: "6%" }}
             />
           </AspectRatio>
         </div>
