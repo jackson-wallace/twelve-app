@@ -4,7 +4,7 @@ const MyProfile = () => {
   const user = {
     username: "johndoe",
     name: "John Doe",
-    bio: "Hello! I am John.",
+    bio: "I'm a professional photographer based in NYC.",
     posts: [],
     profilePicture: "https://github.com/shadcn.png",
   };

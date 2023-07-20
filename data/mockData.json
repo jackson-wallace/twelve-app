@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "birthday": "1987-02-15",
+      "postDay": "2023-05-01",
+      "profilePic": "https://github.com/shadcn.png",
+      "bio": "I'm a professional photographer based in NYC.",
+      "posts": [
+        {
+          "postId": 1,
+          "content": [
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png"
+          ],
+          "caption": "A sneak peek of my recent travels!",
+          "comments": [
+            {
+              "userId": 2,
+              "comment": "Incredible photos, John!"
+            },
+            {
+              "userId": 3,
+              "comment": "Looking forward to your next update!"
+            }
+          ]
+        },
+        {
+          "postId": 2,
+          "content": [
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png"
+          ],
+          "caption": "Throwback to last year's adventures.",
+          "comments": [
+            {
+              "userId": 2,
+              "comment": "These places look amazing!"
+            },
+            {
+              "userId": 3,
+              "comment": "Can't wait to travel again!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "birthday": "1992-07-20",
+      "postDay": "2023-06-15",
+      "profilePic": "https://github.com/shadcn.png",
+      "bio": "Cooking enthusiast and foodie.",
+      "posts": [
+        {
+          "postId": 3,
+          "content": [
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png"
+          ],
+          "caption": "Some of my favorite recipes this year!",
+          "comments": [
+            {
+              "userId": 1,
+              "comment": "Looks delicious!"
+            },
+            {
+              "userId": 3,
+              "comment": "Can't wait to try these!"
+            }
+          ]
+        },
+        {
+          "postId": 4,
+          "content": [
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png"
+          ],
+          "caption": "My baking journey so far.",
+          "comments": [
+            {
+              "userId": 1,
+              "comment": "Great job, Jane!"
+            },
+            {
+              "userId": 3,
+              "comment": "I love those cupcakes!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mike Williams",
+      "birthday": "1990-10-30",
+      "postDay": "2023-07-10",
+      "profilePic": "https://github.com/shadcn.png",
+      "bio": "Nature lover and hiking enthusiast.",
+      "posts": [
+        {
+          "postId": 5,
+          "content": [
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png",
+            "https://github.com/shadcn.png"
+          ],
+          "caption": "Highlights of my hiking trips!",
+          "comments": [
+            {
+              "userId": 1,
+              "comment": "Amazing landscapes, Mike!"
+            },
+            {
+              "userId": 2,
+              "comment": "Looking forward to your next trip!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
