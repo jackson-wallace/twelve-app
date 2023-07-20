@@ -3,10 +3,12 @@
     {
       "id": 1,
       "name": "John Doe",
+      "username": "john_doe",
       "birthday": "1987-02-15",
       "postDay": "2023-05-01",
       "profilePic": "https://github.com/shadcn.png",
       "bio": "I'm a professional photographer based in NYC.",
+      "followerCount": 1200,
       "posts": [
         {
           "postId": 1,
@@ -51,10 +53,12 @@
     {
       "id": 2,
       "name": "Jane Smith",
+      "username": "jane_smith",
       "birthday": "1992-07-20",
       "postDay": "2023-06-15",
       "profilePic": "https://github.com/shadcn.png",
       "bio": "Cooking enthusiast and foodie.",
+      "followerCount": 950,
       "posts": [
         {
           "postId": 3,
@@ -98,10 +102,12 @@
     {
       "id": 3,
       "name": "Mike Williams",
+      "username": "mike_williams",
       "birthday": "1990-10-30",
       "postDay": "2023-07-10",
       "profilePic": "https://github.com/shadcn.png",
       "bio": "Nature lover and hiking enthusiast.",
+      "followerCount": 750,
       "posts": [
         {
           "postId": 5,
