@@ -13,10 +13,10 @@
         {
           "postId": 1,
           "content": [
-            "https://github.com/shadcn.png",
-            "https://github.com/shadcn.png",
-            "https://github.com/shadcn.png",
-            "https://github.com/shadcn.png"
+            "https://i.natgeofe.com/n/b360471b-0926-4812-908f-1d3781103325/01-10226727_uploadsmember573187yourshot-573187-10226727jpg_zloboxxs3jqws7aacqiq3opbzpp3eflutfvvbpyjwjhzlmh4iziq_2606x1738.jpg",
+            "https://image.cnbcfm.com/api/v1/image/107196235-1676617290460-_GRAND-PRIZE_WINNER_-_Karthik_Subramaniam.jpg",
+            "https://image.cnbcfm.com/api/v1/image/107196236-1676617462482-Riten_Dharia.jpg",
+            "https://image.cnbcfm.com/api/v1/image/107196238-1676617601203-Eric_Esterle.jpg"
           ],
           "caption": "A sneak peek of my recent travels!",
           "comments": [
@@ -33,8 +33,8 @@
         {
           "postId": 2,
           "content": [
-            "https://github.com/shadcn.png",
-            "https://github.com/shadcn.png"
+            "https://image.cnbcfm.com/api/v1/image/107196240-1676617779524-Alex_Berger.jpg",
+            "https://image.cnbcfm.com/api/v1/image/107196241-1676617868572-Rhez_Solano_.jpg"
           ],
           "caption": "Throwback to last year's adventures.",
           "comments": [
@@ -63,9 +63,9 @@
         {
           "postId": 3,
           "content": [
-            "https://github.com/shadcn.png",
-            "https://github.com/shadcn.png",
-            "https://github.com/shadcn.png"
+            "https://image.cnbcfm.com/api/v1/image/107196243-1676618122825-Tihomir_Trichkov.jpg",
+            "https://image.cnbcfm.com/api/v1/image/107196242-1676618025305-W_Kent_Williamson_.jpg",
+            "https://image.cnbcfm.com/api/v1/image/107196244-1676618256129-An_Li.jpg"
           ],
           "caption": "Some of my favorite recipes this year!",
           "comments": [
