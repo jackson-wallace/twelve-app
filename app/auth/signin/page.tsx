@@ -1,8 +1,4 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import SignInForm from "@/components/auth/SignInForm";
 
 const SignInPage = () => {
   return (
@@ -16,19 +12,7 @@ const SignInPage = () => {
             Enter your info below to sign in
           </p>
         </div>
-        <div className="grid gap-4">
-          <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" placeholder="m@example.com" />
-          </div>
-          <div className="grid gap-2">
-            <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" />
-          </div>
-        </div>
-        <div className="py-4">
-          <Button className="w-full">Sign In</Button>
-        </div>
+        <SignInForm />
       </div>
     </div>
   );
