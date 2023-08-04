@@ -22,7 +22,7 @@ const SignInForm = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        console.log(user.email);
+        console.log(user.uid);
         // ...
       })
       .catch((error) => {

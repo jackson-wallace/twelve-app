@@ -2,12 +2,13 @@ import Image from "next/image";
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-const Feed = () => {
+type FeedProps = {
+  posts: string[];
+};
+
+const Feed = ({ posts }: FeedProps) => {
   return (
     <div className="flex flex-wrap space-evenly px-4">
-      {/*  
-          - REPLACE BELOW WITH FEED COMPONENT
-        */}
       <div className="flex w-full">
         <AspectRatio ratio={1 / 1}>
           <Image

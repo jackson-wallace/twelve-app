@@ -8,22 +8,22 @@ import Feed from "./Feed";
 type ProfileProps = {
   username: string;
   name: string;
-  bio: string;
   posts: string[];
   profilePicture: string;
+  postDay: string;
 };
 
 const Profile = ({
   username,
   name,
-  bio,
   posts,
   profilePicture,
+  postDay,
 }: ProfileProps) => {
   return (
     <div>
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight flex justify-end my-3 px-6">
-        July 7
+        {postDay}
       </h4>
       <div className="flex justify-around items-center my-5">
         <div className="flex justify-center">
@@ -39,7 +39,7 @@ const Profile = ({
         </h3>
         <p className="text-xl text-muted-foreground">2023</p>
       </div>
-      <Feed />
+      <Feed posts={posts} />
     </div>
   );
 };
