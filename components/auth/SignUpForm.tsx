@@ -4,8 +4,8 @@ import { useState } from "react";
 
 import { useRouter } from "next/navigation";
 
-import { app } from "@/firebaseConfig";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "@/firebaseConfig";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -19,17 +19,16 @@ const SignUpForm = () => {
   const [password, setPassword] = useState("");
   const [retypedPassword, setRetypedPassword] = useState("");
 
-  const auth = getAuth(app);
   const router = useRouter;
 
-  async function onSubmit(event: React.SyntheticEvent) {
+  const onSubmit = async (event: React.SyntheticEvent) => {
     event.preventDefault();
 
     if (password !== retypedPassword) {
       alert("Password fields do not match");
     } else {
       setIsLoading(true);
-      createUserWithEmailAndPassword(auth, email, password)
+      await createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Signed in -> route to profile
           const user = userCredential.user;
@@ -48,7 +47,7 @@ const SignUpForm = () => {
           setRetypedPassword("");
         });
     }
-  }
+  };
 
   return (
     <form onSubmit={onSubmit}>

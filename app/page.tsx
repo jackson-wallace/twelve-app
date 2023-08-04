@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex flex-col w-full gap-3 py-3 px-6">
         <Button
           onClick={() => {
-            router.push("/auth/signin");
+            router.push("/login");
           }}
         >
           Sign In
@@ -21,7 +21,7 @@ export default function Home() {
         <Button
           variant="outline"
           onClick={() => {
-            router.push("/auth/signup");
+            router.push("/register");
           }}
         >
           Sign Up
