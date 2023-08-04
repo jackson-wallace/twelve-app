@@ -33,11 +33,11 @@ const Profile = ({
           </Avatar>
         </div>
       </div>
-      <div className="flex justify-between px-6 my-2">
+      <div className="flex flex-col items-center justify-between px-6 my-4">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           {name}
         </h3>
-        <p className="text-xl text-muted-foreground">2023</p>
+        <p className="text-xl text-muted-foreground">@{username}</p>
       </div>
       <Feed posts={posts} />
     </div>
