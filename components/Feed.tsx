@@ -12,7 +12,7 @@ const Feed = ({ posts }: FeedProps) => {
       <div className="flex w-full">
         <AspectRatio ratio={1 / 1}>
           <Image
-            src="/morty.png"
+            src="/image4.png"
             alt="Image"
             className="object-cover p-2"
             fill
@@ -22,7 +22,47 @@ const Feed = ({ posts }: FeedProps) => {
       <div className="flex w-full">
         <AspectRatio ratio={1 / 1}>
           <Image
-            src="/morty.png"
+            src="/image2.png"
+            alt="Post Thumbnail"
+            className="object-cover p-2"
+            fill
+          />
+        </AspectRatio>
+      </div>
+      <div className="flex w-full">
+        <AspectRatio ratio={1 / 1}>
+          <Image
+            src="/image3.png"
+            alt="Post Thumbnail"
+            className="object-cover p-2"
+            fill
+          />
+        </AspectRatio>
+      </div>
+      <div className="flex w-full">
+        <AspectRatio ratio={1 / 1}>
+          <Image
+            src="/image1.png"
+            alt="Post Thumbnail"
+            className="object-cover p-2"
+            fill
+          />
+        </AspectRatio>
+      </div>
+      <div className="flex w-full">
+        <AspectRatio ratio={1 / 1}>
+          <Image
+            src="/image5.png"
+            alt="Post Thumbnail"
+            className="object-cover p-2"
+            fill
+          />
+        </AspectRatio>
+      </div>
+      <div className="flex w-full">
+        <AspectRatio ratio={1 / 1}>
+          <Image
+            src="/image6.png"
             alt="Post Thumbnail"
             className="object-cover p-2"
             fill
