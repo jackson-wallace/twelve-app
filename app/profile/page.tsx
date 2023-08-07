@@ -11,7 +11,11 @@ import { getDoc, doc } from "firebase/firestore";
 import Profile from "@/components/Profile";
 import { Icons } from "@/components/Icons";
 
+/**
+ * MyProfile component: Displays the profile of the currently authenticated user.
+ */
 const MyProfile = () => {
+  // Initialize state for various user profile properties
   const [isLoading, setIsLoading] = useState(true);
   const [currName, setCurrName] = useState("");
   const [currUsername, setCurrUsername] = useState("");
@@ -19,19 +23,21 @@ const MyProfile = () => {
   const [currProfilePicture, setCurrProfilePicture] = useState("");
   const [currPostDay, setCurrPostDay] = useState("");
 
-  const router = useRouter(); // Get the router object
+  // Get router object for navigation purposes
+  const router = useRouter();
 
+  // Monitor authentication state changes
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/auth.user
+      // If user is authenticated, fetch their profile data
       const uid = user.uid;
       const getUserData = async () => {
-        // Read data from db and update state
+        // Reference to the user's document in Firebase Firestore
         const docRef = doc(db, "users", uid);
         try {
-          const doc = await getDoc(docRef);
-          const docData = doc.data();
+          const userDoc = await getDoc(docRef);
+          const docData = userDoc.data();
+          // Update state with fetched data
           setCurrName(docData?.name);
           setCurrUsername(docData?.username);
           setCurrPosts(docData?.posts);
@@ -39,25 +45,24 @@ const MyProfile = () => {
           setCurrPostDay(docData?.postDay);
           setIsLoading(false);
         } catch (error) {
-          console.log(error);
+          console.error("Error fetching user data: ", error);
         }
       };
       getUserData();
-      // ...
     } else {
-      // User is signed out
-      // Take to login/register page
+      // If user is not authenticated, redirect to the homepage
       router.push("/");
     }
   });
 
+  // Render loading spinner or profile data based on the state
   return isLoading ||
     !currName ||
     !currUsername ||
     !currPosts ||
     !currProfilePicture ||
     !currPostDay ? (
-    <div className="flex justify-center items-center h-screen w-screen flex justify-center items-center h-screen w-screen">
+    <div className="flex justify-center items-center h-screen w-screen">
       <Icons.spinner className="h-12 w-12 animate-spin" />
     </div>
   ) : (
@@ -71,4 +76,5 @@ const MyProfile = () => {
   );
 };
 
+// Export the MyProfile component for use in other files
 export default MyProfile;
